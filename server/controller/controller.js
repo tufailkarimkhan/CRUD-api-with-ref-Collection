@@ -49,6 +49,7 @@ exports.postProductRoute = (req, res) => {
     });
 };
 
+// here i create funcon to read all data from collection
 exports.postReadAllRoute = (req, res) => {
   product
     .find()
@@ -63,6 +64,8 @@ exports.postReadAllRoute = (req, res) => {
       res.json({ status: 0, message: " Can't read Product " });
     });
 };
+
+// here i create funcon to read one data from collection
 exports.postReadOneRoute = (req, res) => {
   product
     .findOne({ productName: req.body.productName })
@@ -76,6 +79,8 @@ exports.postReadOneRoute = (req, res) => {
       res.json({ status: 1, message: "Sorry We Can't Find" });
     });
 };
+
+// here i create funcino for for update data in database which is used in route.js
 
 exports.postUpdateRoute = (req, res) => {
   product
@@ -96,6 +101,7 @@ exports.postUpdateRoute = (req, res) => {
     });
 };
 
+// here i create funcino for delete data from database and i sue it in route.js
 exports.productDeleteRoute = (req, res) => {
   product
     .findOneAndDelete({ productName: req.body.productName })
@@ -110,10 +116,3 @@ exports.productDeleteRoute = (req, res) => {
       res.json({ status: 0, message: "Product Not Deleted." });
     });
 };
-// exports.postUpdateRoute = (req, res) => {
-//   res.render("update");
-// };
-
-// exports.postDeleteRoute = (req, res) => {
-//   res.render("delete");
-// };

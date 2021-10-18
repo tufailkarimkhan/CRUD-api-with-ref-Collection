@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 
+//here i make schema of product
+
 const product = mongoose.Schema({
   productName: {
     type: String,
@@ -23,7 +25,7 @@ const product = mongoose.Schema({
   },
   categoryId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "category",
+    ref: "category", //here i refer category id
   },
 });
 
