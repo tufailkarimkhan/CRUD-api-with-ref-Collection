@@ -62,3 +62,8 @@ https://user-images.githubusercontent.com/75901043/137769951-0faeedc2-7e42-46d1-
 
 
     * Testing the API using Postman
+    
+
+https://user-images.githubusercontent.com/75901043/137771525-305b23e7-c491-47b4-8610-1cc7dac90a03.mp4
+
+
