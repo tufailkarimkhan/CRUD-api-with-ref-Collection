@@ -33,7 +33,7 @@
 # How to Read Data
 
     * Type localhost:8000/readAll in url Bar
-    * how all Data which store inside the collection.
+    * show all Data which store inside the collection.
 
 # How to Update Data
 
